@@ -1,17 +1,81 @@
-/* Error: expected "{".
- *   ,
- * 1 | .logo
- *   |      ^
- *   '
- *   header.module.scss 1:6  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 1 \2502  .logo\a   \2502       ^\a   \2575 \a   header.module.scss 1:6  root stylesheet';
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #27282c;
+  height: 72px;
 }
+.container nav {
+  display: flex;
+  align-items: center;
+}
+.container nav .logo {
+  flex-grow: 1;
+  max-width: 100%;
+}
+.container nav .logo svg {
+  height: 100%;
+}
+.container nav ul {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .container nav ul {
+    display: none;
+  }
+}
+.container nav ul li {
+  opacity: 0.7;
+  line-height: 72px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+.container nav ul li:hover .dropdown {
+  transition: 2s;
+  transition-delay: 2s;
+  background: #ffffff;
+  display: flex;
+}
+.container nav ul li:hover .dropdown ul {
+  display: block;
+}
+.container nav ul li:hover .dropdown ul p {
+  font-weight: 700;
+  color: black;
+}
+.container nav ul li:hover .dropdown ul li {
+  color: black;
+}
+.container nav ul li .dropdown {
+  transition: 2s;
+  transition-delay: 2s;
+  z-index: 1000;
+  position: absolute;
+  display: none;
+}
+.container nav .icons {
+  display: flex;
+  --wt-col-count: 0;
+  max-width: 100%;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+.container nav .icons svg {
+  width: 100%;
+  line-height: 72px;
+  padding: 0 10px;
+  fill: #ffffff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.container nav .icons svg:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=header.module.css.map */

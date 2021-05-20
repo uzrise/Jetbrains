@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"plugins.module.css"}
+{"version":3,"sourceRoot":"","sources":["plugins.module.scss"],"names":[],"mappings":"AACE;EACE;;AAGE;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EARF;IASG;;;AAED;EACE;;AAEA;EACE;EACA;;AAMR;EACE;EACA;;AAEE;EACE;EACA;EACA","file":"plugins.module.css"}

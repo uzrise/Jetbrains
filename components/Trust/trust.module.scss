@@ -1,0 +1,65 @@
+.trust {
+  background: #27282c;
+  padding-top: 98px;
+  padding-bottom: 48px;
+  @media (max-width: 640px) {
+    padding-top: 20px;
+  }
+  h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .text {
+      p {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 350;
+        line-height: 40px;
+      }
+    }
+
+    .members {
+      justify-content: flex-end;
+      display: flex;
+      margin-right: 16px;
+      @media (max-width: 768px) {
+        justify-content: flex-start;
+      }
+
+      .member {
+        display: block;
+        margin: 16px;
+        @media (max-width: 768px) {
+          margin-left: 0;
+        }
+        h1 {
+          margin: 0;
+          color: #fff;
+          font-size: 70px;
+          font-weight: 400;
+          line-height: 70px;
+          @media (max-width: 380px) {
+          font-size: 50px;
+          }
+        }
+        p{
+          color: #fff;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

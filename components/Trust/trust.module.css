@@ -1,3 +1,71 @@
-
+.trust {
+  background: #27282c;
+  padding-top: 98px;
+  padding-bottom: 48px;
+}
+@media (max-width: 640px) {
+  .trust {
+    padding-top: 20px;
+  }
+}
+.trust h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0;
+}
+.trust .actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .trust .actions {
+    grid-template-columns: 1fr;
+  }
+}
+.trust .actions .text p {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 350;
+  line-height: 40px;
+}
+.trust .actions .members {
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 16px;
+}
+@media (max-width: 768px) {
+  .trust .actions .members {
+    justify-content: flex-start;
+  }
+}
+.trust .actions .members .member {
+  display: block;
+  margin: 16px;
+}
+@media (max-width: 768px) {
+  .trust .actions .members .member {
+    margin-left: 0;
+  }
+}
+.trust .actions .members .member h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 70px;
+}
+@media (max-width: 380px) {
+  .trust .actions .members .member h1 {
+    font-size: 50px;
+  }
+}
+.trust .actions .members .member p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
 
 /*# sourceMappingURL=trust.module.css.map */

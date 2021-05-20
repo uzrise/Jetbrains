@@ -1,3 +1,35 @@
-
+.plugins .elements {
+  max-width: 800px;
+}
+.plugins .elements .title h1 {
+  margin: 0;
+  letter-spacing: normal;
+  color: #27282c;
+  font-family: Gotham SSm A, Gotham SSm B, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 350;
+  line-height: 40px;
+}
+@media (max-width: 640px) {
+  .plugins .elements .title h1 {
+    font-size: 28px;
+  }
+}
+.plugins .elements .title h1 a {
+  color: #167dff;
+}
+.plugins .elements .title h1 a:hover {
+  border-bottom: 1px solid #4ca6ff;
+  cursor: pointer;
+}
+.plugins .elements .languages {
+  max-width: 100%;
+  margin-bottom: 96px;
+}
+.plugins .elements .languages button:last-child {
+  background: #167dff;
+  color: #fff;
+  padding: 12px 32px;
+}
 
 /*# sourceMappingURL=plugins.module.css.map */

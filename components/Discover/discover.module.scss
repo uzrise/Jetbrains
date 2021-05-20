@@ -1,0 +1,45 @@
+.discoverContainer {
+  background-color: #f4f4f4;
+  padding-top: 96px;
+  padding-bottom:96px;
+
+  h1 {
+    color: #27282c;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+  }
+
+  .discoverCards {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+     display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    @media (max-width: 620px) {
+      grid-template-columns: 1fr;
+
+    }
+    .card {
+      margin-top: 48px;
+      box-sizing: border-box;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        box-sizing: border-box;
+      }
+
+      p {
+        max-width: 280px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
