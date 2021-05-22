@@ -1,5 +1,6 @@
 .customerContainer {
   padding-bottom: 96px;
+
   h1 {
     color: #27282c;
     font-size: 40px;
@@ -7,28 +8,33 @@
     line-height: 48px;
   }
 
-  p {
+  .titleText {
     letter-spacing: normal;
     color: #27282c;
     font-size: 30px;
-    font-weight: 350;
+    font-weight: 200;
     line-height: 40px;
+    margin-top: 24px;
   }
 
   .customerCards {
     display: flex;
     gap: 30px;
-    @media (max-width: 768px) {
+    margin-top: 24px;
+    @media (max-width: 1000px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
     @media (max-width: 640px) {
-    grid-template-columns: 1fr;
-  }
+      grid-template-columns: 1fr;
+    }
+
     .card {
       padding: 24px 32px;
       border: 1px solid rgba(39, 40, 44, .2);
       cursor: pointer;
+      width: 100%;
+
       &:hover {
         border: 1px solid #27282c;
 
@@ -53,14 +59,19 @@
         line-height: 28px;
       }
 
-      p {
+      .name {
         font-size: 15px;
         font-weight: 400;
         line-height: 24px;
+        margin-top: 24px;
       }
 
       .hover {
         color: rgba(39, 40, 44, .7);
+        margin-top: 12px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
       }
     }
   }

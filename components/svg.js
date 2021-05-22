@@ -1,5 +1,5 @@
 export const LogoIcon = () => (
-    <svg width="61" height="61" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" id="jetbrains-simple">
+    <svg width="72" height="72" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" id="jetbrains-simple">
         <path d="m0 0h700v700h-700z" fill="#000"/>
         <path d="m60.379 568.75h262.5v43.75h-262.5z" fill="#fff"/>
         <path

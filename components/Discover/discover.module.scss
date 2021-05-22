@@ -1,7 +1,7 @@
 .discoverContainer {
   background-color: #f4f4f4;
   padding-top: 96px;
-  padding-bottom:96px;
+  padding-bottom: 96px;
 
   h1 {
     color: #27282c;
@@ -14,31 +14,36 @@
     display: flex;
     gap: 100px;
     justify-content: space-between;
-    @media (max-width: 768px) {
-     display: grid;
+    margin-top: 48px;
+    @media (max-width: 1000px) {
+      display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 30px;
     }
-    @media (max-width: 620px) {
+    @media (max-width: 640px) {
       grid-template-columns: 1fr;
 
     }
+
     .card {
-      margin-top: 48px;
       box-sizing: border-box;
 
-      h3 {
+      .title {
+        margin-top: 24px;
         font-size: 20px;
         font-weight: 700;
         line-height: 28px;
         box-sizing: border-box;
       }
 
-      p {
+      .name {
         max-width: 280px;
         font-size: 15px;
         font-weight: 400;
         line-height: 24px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        color: rgba(39,40,44,.7);
       }
     }
   }

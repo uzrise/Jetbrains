@@ -23,6 +23,7 @@
   cursor: pointer;
 }
 .plugins .elements .languages {
+  margin-top: 12px;
   max-width: 100%;
   margin-bottom: 96px;
 }

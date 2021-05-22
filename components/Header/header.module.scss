@@ -26,9 +26,8 @@
       }
 
       li {
-        opacity: .7;
         line-height: 72px;
-        color: #fff;
+        color: rgba(255, 255, 255, 0.6);
         cursor: pointer;
         letter-spacing: normal;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Arial, sans-serif;
@@ -37,14 +36,17 @@
         padding: 0 10px;
 
         &:hover {
+          color: #fff;
+
           .dropdown {
             transition: 2s;
             transition-delay: 2s;
-            background: #ffffff;
+            background: #ffff;
             display: flex;
 
             ul {
               display: block;
+
               p {
                 font-weight: 700;
                 color: black;
@@ -60,9 +62,89 @@
         .dropdown {
           transition: 2s;
           transition-delay: 2s;
-          z-index: 1000;
+          z-index: 9999;
           position: absolute;
           display: none;
+          box-sizing: border-box;
+          max-width: 1200px;
+          left: 10%;
+          right: 10%;
+          max-height: 500px;
+          overflow-y: hidden;
+
+          &:nth-child(3) {
+            left: 300px;
+            right: auto;
+          }
+
+          .left {
+            display: block;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+            height: 100%;
+
+            img {
+              vertical-align: middle;
+              width: 100%;
+            }
+          }
+
+          .right {
+            padding: 24px 32px;
+            width: 100%;
+            max-height: 100%;
+
+            .title {
+              font-size: 12px;
+              font-weight: 700;
+              color: #27282c;
+              line-height: 16px;
+            }
+
+            .flex {
+              display: flex;
+              max-height: 250px;
+
+              .program {
+                padding-right: 32px;
+
+                &:nth-child(3) {
+                  border-right: 1px solid #b5b5b8;
+                }
+
+                &:nth-child(4) {
+                  border-right: 1px solid #b5b5b8;
+                  padding-left: 32px;
+                }
+
+                &:nth-child(5) {
+                  padding-left: 32px;
+                }
+
+                ul {
+                  .dropdownLi {
+                    margin: 5px 0;
+                    color: #707279;
+                    padding: 6px 12px 0 0;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 24px;
+                  }
+                }
+              }
+
+              div {
+                .rider {
+                  padding-top: 23px;
+
+                  .dropdownLi {
+                    padding-top: 0;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -5,6 +5,7 @@
   @media (max-width: 640px) {
     padding-top: 20px;
   }
+
   h2 {
     color: #fff;
     font-size: 40px;
@@ -20,6 +21,8 @@
     }
 
     .text {
+      margin-top: 24px;
+
       p {
         color: #fff;
         font-size: 28px;
@@ -38,10 +41,11 @@
 
       .member {
         display: block;
-        margin: 16px;
+        margin:24px 16px 0;
         @media (max-width: 768px) {
           margin-left: 0;
         }
+
         h1 {
           margin: 0;
           color: #fff;
@@ -49,10 +53,11 @@
           font-weight: 400;
           line-height: 70px;
           @media (max-width: 380px) {
-          font-size: 50px;
+            font-size: 50px;
           }
         }
-        p{
+
+        p {
           color: #fff;
           font-size: 15px;
           font-weight: 400;
