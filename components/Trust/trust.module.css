@@ -23,6 +23,9 @@
     grid-template-columns: 1fr;
   }
 }
+.trust .actions .text {
+  margin-top: 24px;
+}
 .trust .actions .text p {
   color: #fff;
   font-size: 28px;
@@ -41,7 +44,7 @@
 }
 .trust .actions .members .member {
   display: block;
-  margin: 16px;
+  margin: 24px 16px 0;
 }
 @media (max-width: 768px) {
   .trust .actions .members .member {
